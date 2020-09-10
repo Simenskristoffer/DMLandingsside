@@ -730,6 +730,13 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@babel/runtime@^7.10.3":
+  version "7.11.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
+  integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.1.0", "@babel/template@^7.4.4":
   version "7.4.4"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.4.4.tgz#f4b88d1225689a08f5bc3a17483545be9e4ed237"
@@ -1133,6 +1140,11 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
+
+"@tweenjs/tween.js@^18.1.2":
+  version "18.6.0"
+  resolved "https://registry.yarnpkg.com/@tweenjs/tween.js/-/tween.js-18.6.0.tgz#9160ca987e75ab751d0c48d5100339bd9cd0c301"
+  integrity sha512-z45HU0G0e/SenbvGdAlTpUR5Hur5zwZXQcqfI+f7EnVHdeb2oMI2rQghEePu7uXuvBC0nuKWG5YtZ1nWbuvqzQ==
 
 "@types/configstore@^2.1.1":
   version "2.1.1"
@@ -4364,10 +4376,10 @@ event-source-polyfill@^1.0.8:
   resolved "https://registry.yarnpkg.com/event-source-polyfill/-/event-source-polyfill-1.0.8.tgz#a0d40fad813bf2ed2ccf3b7839f9d625768fc310"
   integrity sha512-wC9j5vjH9Xu9s8XhumgBoypdFJswraU1HXykqCCD/b7q+EH4P/avf5fM1e8IiHyHNZOeOiWwrki2775XFTYyeg==
 
-eventemitter3@^3.0.0:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
-  integrity sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
+eventemitter3@^4.0.0:
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
+  integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
 events@^3.0.0:
   version "3.0.0"
@@ -4933,12 +4945,17 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-follow-redirects@1.5.10, follow-redirects@^1.0.0:
+follow-redirects@1.5.10:
   version "1.5.10"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
   integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
   dependencies:
     debug "=3.1.0"
+
+follow-redirects@^1.0.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
+  integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
 for-each@^0.3.3:
   version "0.3.3"
@@ -5163,6 +5180,14 @@ gatsby-page-utils@^0.0.16:
     lodash "^4.17.15"
     micromatch "^3.1.10"
     slash "^3.0.0"
+
+gatsby-plugin-google-analytics@^2.1.23:
+  version "2.3.13"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.3.13.tgz#46f78f4df11cc773d44e5909ea491c8f8c0e6774"
+  integrity sha512-K/6c9iByR8uDpFZuJrappjyMsVtWFwPyAkRlXFHhq2mmNtgZeRVKFf5XoGiOHCeMPEpBGE58LLana/F01LLteQ==
+  dependencies:
+    "@babel/runtime" "^7.10.3"
+    minimatch "3.0.4"
 
 gatsby-plugin-manifest@^2.2.13:
   version "2.2.13"
@@ -6071,11 +6096,11 @@ http-proxy-middleware@^0.19.1:
     micromatch "^3.1.10"
 
 http-proxy@^1.17.0:
-  version "1.17.0"
-  resolved "https://registry.yarnpkg.com/http-proxy/-/http-proxy-1.17.0.tgz#7ad38494658f84605e2f6db4436df410f4e5be9a"
-  integrity sha512-Taqn+3nNvYRfJ3bGvKfBSRwy1v6eePlm3oc/aWVxZp57DQr5Eq3xhKJi7Z4hZpS8PC3H4qI+Yly5EmFacGuA/g==
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/http-proxy/-/http-proxy-1.18.1.tgz#401541f0534884bbf95260334e72f88ee3976549"
+  integrity sha512-7mz/721AbnJwIVbnaSv1Cz3Am0ZLT/UBwkC92VlxhXv/k/BBQfM2fXElQNC27BVGr0uwUpplYPQM9LnaBMR5NQ==
   dependencies:
-    eventemitter3 "^3.0.0"
+    eventemitter3 "^4.0.0"
     follow-redirects "^1.0.0"
     requires-port "^1.0.0"
 
@@ -7699,7 +7724,7 @@ minimatch@3.0.3:
   dependencies:
     brace-expansion "^1.0.0"
 
-minimatch@^3.0.3, minimatch@^3.0.4, minimatch@~3.0.2:
+minimatch@3.0.4, minimatch@^3.0.3, minimatch@^3.0.4, minimatch@~3.0.2:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   integrity sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
@@ -9601,6 +9626,11 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-anchor-link-smooth-scroll@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/react-anchor-link-smooth-scroll/-/react-anchor-link-smooth-scroll-1.0.12.tgz#5cd49c73e74be6d20b4c05a5e5c72d07ebbedac7"
+  integrity sha512-aaY+9X0yh8YnC0jBfoTKpsiCLdO/Y6pCltww+VB+NnTBPDOvnIdnp1AlazajsDitc1j+cVSQ+yNtaVeTIMQbxw==
+
 react-dev-utils@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.2.3.tgz#5b42d9ea58d5e9e017a2f57a40a8af408a3a46fb"
@@ -9669,6 +9699,13 @@ react-hot-loader@^4.12.12:
     shallowequal "^1.1.0"
     source-map "^0.7.3"
 
+react-icons@^3.7.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.11.0.tgz#2ca2903dfab8268ca18ebd8cc2e879921ec3b254"
+  integrity sha512-JRgiI/vdF6uyBgyZhVyYJUZAop95Sy4XDe/jmT3R/bKliFWpO/uZBwvSjWEdxwzec7SYbEPNPck0Kff2tUGM2Q==
+  dependencies:
+    camelcase "^5.0.0"
+
 react-is@^16.7.0, react-is@^16.8.1:
   version "16.8.3"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.3.tgz#4ad8b029c2a718fc0cfc746c8d4e1b7221e5387d"
@@ -9696,6 +9733,14 @@ react-side-effect@^1.1.0:
   dependencies:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
+
+react-slideshow-image@^1.3.0:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/react-slideshow-image/-/react-slideshow-image-1.5.3.tgz#10f6269ae832f7b0d1156432def9ca5b96dcaeda"
+  integrity sha512-Q0LqwRNlop5FoWA2yDHQVbUipBe+IZ8akwo/toow5CHhoV/Q9axi6SyxidZn9SqADOnVmP4loqDyOtP4Hzzw7w==
+  dependencies:
+    "@tweenjs/tween.js" "^18.1.2"
+    prop-types "^15.5.10"
 
 react@^16.9.0:
   version "16.9.0"
@@ -9852,6 +9897,11 @@ regenerator-runtime@^0.13.2:
   version "0.13.3"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.3.tgz#7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5"
   integrity sha512-naKIZz2GQ8JWh///G7L3X6LaQUAMp2lvb1rvwwsURe/VXwD6VMfr+/1NuNw3ag8v2kY1aQ/go5SNn79O9JU7yw==
+
+regenerator-runtime@^0.13.4:
+  version "0.13.7"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz#cac2dacc8a1ea675feaabaeb8ae833898ae46f55"
+  integrity sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
 
 regenerator-transform@^0.14.0:
   version "0.14.1"
